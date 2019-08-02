@@ -98,14 +98,14 @@ ArrayAdapter<String> aaSubCateNames;
                 switch (position){
                     case 0:
                         subCategoryNames.clear();
-                        arrCategoryNames = getResources().getStringArray(R.array.category);
                         arrSubCateNames = getResources().getStringArray(R.array.subCategoryRP);
+                        subCategoryNames.addAll(Arrays.asList(arrSubCateNames));
                         aaSubCateNames.notifyDataSetChanged();
                         break;
                     case 1:
                         subCategoryNames.clear();
-                        arrCategoryNames = getResources().getStringArray(R.array.category);
                         arrSubCateNames = getResources().getStringArray(R.array.subCategorySOI);
+                        subCategoryNames.addAll(Arrays.asList(arrSubCateNames));
                         aaSubCateNames.notifyDataSetChanged();
                         break;
                 }
